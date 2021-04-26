@@ -1,0 +1,45 @@
+#CRM Makhmood aka v.2.0
+a=0
+x=0
+listfio=[0]
+listage=[0]
+listtel=[0]
+
+while a!='stop':
+	print('''Приветствую Вас!
+Я бот Махмуд ака v2.0''')
+	print('Я прошу Вашего разрешения на получение и обработку Ваших данных')
+	while a!='да':
+		print('''Если Вы согласны напишите ответ
+Да или Нет''')
+		a=input().lower()
+		if a=='да':
+			print('''Отлично, тогда начнем!
+Напишите ответы на нижеследующие вопросы 
+в похожем формате:\n
+1. Иванов Иван Иванович
+2. 18
+3. 998909979366\n''')
+			fio=input('1. Ф.И.О.: ')
+			age=input('2. Возраст: ')
+			tel=input('3. Номер тел: ')
+			listfio.append(fio)
+			listage.append(age)
+			listtel.append(tel)
+			print('Благодарим за доверие и гарантируем конфидициальность Ваших данных')
+		elif a=='admin':
+			print(listfio[x],listage[x],listtel[x])
+		elif a!='stop':
+			print('Мы гарантируем сохранность Ваших данных')
+	print('Для добавления новых данных нажмите Enter')
+	a=input()
+	if a=='stop':
+		print('Стоп машина')
+	elif a=='admin':
+		print('Введите порядковый номер клиента:')
+		x=int(input())
+		print('Ф.И.О.:',listfio[x])
+		print('Age:',listage[x])
+		print('Tel:',listtel[x],'\n')
+	else:
+		print('')
