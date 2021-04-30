@@ -1,0 +1,14 @@
+# Создать функцию, которая принимает значение от пользователя и возводит число в куб
+def cvadro(x):
+	return (x**2)
+def cube(x):
+	return (x**3)
+def quatro(x):
+	return (x**4)
+a = int(input('Введите число:'))
+x=a
+robot=[cvadro(x), cube(x), quatro(x)]
+z=2
+for e in robot:
+  print(a, 'в степени', z, 'равно:', e)
+  z=z+1
