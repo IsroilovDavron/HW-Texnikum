@@ -1,0 +1,33 @@
+import random
+x=0
+while x!='stop':
+	print('''Привет я Биба, давай поиграем
+в игру "Угадай число, который я загадал"\n
+....итак, я загадал число от 1 до 100
+Введи число а я скажу угодал ты или нет''')
+	a=random.randint(1,100)
+	while x!=a:
+		x=input('Твое число: ')
+		if x.isdigit():
+			x=int(x)
+			if x==a:
+				print('Поздравляю, Ты угадал, молодец!!!\n')
+				break
+			elif x+25>=a>=x-25:
+				if x+20>=a>=x-20:
+					if x+15>=a>=x-15:
+						if x+10>=a>=x-10:
+							if x+5>=a>=x-5:
+								print('горячо')
+							else:
+								print('теплее')
+						else:
+							print('тепло')
+					else:			
+						print('холодно')
+				else:
+					print('холоднее')
+		elif x=='stop':
+			break
+		else:
+			print('Я же сказал надо вводит число (((')

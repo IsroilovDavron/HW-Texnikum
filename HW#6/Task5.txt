@@ -1,0 +1,5 @@
+#'Без "if"а'
+print('Введите два слова через один пробел:')
+a=input()
+b=a.split(' ')   # eto uje list
+print(b[1],b[0])  # vivodim elementy kak stroku

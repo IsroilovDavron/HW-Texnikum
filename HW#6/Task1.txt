@@ -1,0 +1,8 @@
+#"Pretty Print"
+list=['Вывести', 'все', 'элементы', 'массива', 'в', 'цикле', 'while']
+i=0
+n=0
+while i<len(list):
+  n=n+1
+  print(n,'.',list[i])
+  i=i+1

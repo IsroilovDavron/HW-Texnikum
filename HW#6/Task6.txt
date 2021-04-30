@@ -1,0 +1,30 @@
+#'Калькулятор'
+c=0
+list=['+', '-', '*', '/', '0']
+while c!='0':
+	print('\nВведите первое число: ')
+	a=int(input())
+	print('Введите второе число: ')
+	b=int(input())
+	print('Введите знак опрерации: ')
+	while True and c!='0' :
+		c=input()
+		if c in list:
+			if c=='+':
+				print(a+b)
+				break              
+			elif c=='-':
+				print(a-b)
+				break  
+			elif c=='*':
+				print(a*b)
+				break  
+			elif c=='/':
+				if b==0:
+					print('На ноль делить нельзя')
+					break
+				else:
+					print(a/b)
+					break
+		else:
+			print('Введен не правильный знак!\nВведите знак опрерации: ')

@@ -1,0 +1,33 @@
+#Ленивый Нуриддин
+print('''Нуриддин выберите метод сжатия
+1. Сжимаем по классике
+2. Сжимаем путем сортировки''')
+m=0
+while m!='stop':
+	m=input('Выберите 1 или 2: ')
+	if m=='1':
+		print('Введите строку которую надо уменьшить!')
+		str=input()
+		i=0
+		list_str=[]
+		while i<len(str):
+			list_str.append(str[i])
+			i=i+1
+          print(str[0])
+   #####################
+str = input('Введите строку\n')
+str_1 = ''
+for e in range(len(str)):
+    if str[e] != str[e-1]:
+        str_1 = str_1+str[e]+e
+    else:
+      
+str = str_1
+print(str)
+ ########################3
+
+	elif m=='2':
+		print('Введите строку которую надо уменьшить!')
+	else:
+		print('Выберите один из данных вариантов')
+	print(list_str)

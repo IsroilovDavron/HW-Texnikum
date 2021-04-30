@@ -1,0 +1,11 @@
+str = input('Введите строку\n')
+str_1 = ''
+d=0
+for e in range(len(str)):
+    if str[e] != str[e-1]:
+        str_1 = str_1+str[e]
+    else:
+      d=d+1
+      str_1=str_1+'d'
+str=str_1
+print(str)
